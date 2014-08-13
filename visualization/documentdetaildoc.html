@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+<title> Document Detail View Documentation  </title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<h2>What you see</h2>
+<p>Details on a specific document.
+<p> Association with topics are shown on the left, lengths are bar are scaled to highest association.
+<p>Documents content is shown in the middle.
+<h2> How it is determined</h2>
+<p>
+Topics are identified by the top three words taken from the --output-topic-keys MALLET output file (topics.tsv). 
+<p>
+Topic lengths are ordered based on the weight value from the --output-doc-topics MALLET output file (docComp.tsv). Lengths are then scaled to the most prevalent. 
+<p>Document content is pulled from the native file in the corpus directory.
+<h2> D3 Method (topicmodelviz.js) </h2>
+docviz(id) where id is the base name of the document.
+<h2> Relevant Program </h2>
+createDocDetailJSON.py 
+<p>
+<a href="index.html">To Visualization</a> 
+</body>

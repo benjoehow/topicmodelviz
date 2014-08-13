@@ -1,0 +1,30 @@
+body {
+	background-color: #686868;
+	color: white;
+}
+
+.chart rect:hover {
+  cursor: pointer;
+}
+
+
+.chart circle {
+  fill: #46C4F3;
+}
+
+.chart circle:hover {
+  cursor: pointer;
+}
+
+.chart text {
+  fill: white;
+  font: 10px sans-serif;
+  text-anchor: middle;
+  vertical-align: left;
+
+}
+
+div
+{
+overflow:scroll;
+} 

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+<title> Topic Overview Documentation  </title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<h2>What you see</h2>
+<p>This is the first view on loading the visualization. It shows the k topics requested at run time,
+in order of prevalence in the corpus. 
+<h2> How it is determined</h2>
+<p>
+Topics are identified by the top three words taken from the --output-topic-keys MALLET output file (topics.tsv). 
+<p>
+Lengths are determined by the sum of weights for each topic according to the --output-doc-topics MALLET output file (docComp.tsv). Lengths are then scaled to the most prevalent. 
+<h2> D3 Method (topicmodelviz.js)</h2>
+homepage()
+<h2> Relevant Program </h2>
+createTopicOverviewJSON.py 
+<p>
+<a href="index.html">To Visualization</a> 
+</body>

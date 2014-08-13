@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+<title> Topic Detail View Documentation  </title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<h2>What you see</h2>
+<p>Details on a specific topic. 
+<p> Words are shown on the right, ordered by association of word with the topic.
+<p>Documents are shown in the middle of the view based on the individual document's association with the topic of interest. 
+<h2> How it is determined</h2>
+<p>
+Topics are identified by the top three words taken from the --output-topic-keys MALLET output file (topics.tsv). Words are taken from same file.
+<p>
+Documents are ordered based on the weight value from the --output-doc-topics MALLET output file (docComp.tsv). Lengths are then scaled to the most prevalent. 
+<h2> D3 Method (topicmodelviz.js)</h2>
+topicviz(id) where id is the topic id assigned by MALLET
+<h2> Relevant Program </h2>
+createTopicDetailJSON.py 
+<p>
+<a href="index.html">To Visualization</a> 
+</body>
